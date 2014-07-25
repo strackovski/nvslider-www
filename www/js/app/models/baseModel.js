@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 define(function () {
     function BaseModel(title, subtitle) {
         this.title = title;

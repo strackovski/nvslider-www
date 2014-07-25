@@ -6,16 +6,16 @@
  * into this file.
  * =================================================== */
 requirejs.config({
-  baseUrl: './js',
-  paths: {
-    'jquery':                   'vendor/jquery',
-    'bootstrap':                'vendor/bootstrap',
-    'nvslider':                 'vendor/jquery.nvslider',
-    'main':                     'vendor/main'
-  },
-  shim: {
-    'bootstrap':                ['jquery'],
-    'nvslider':                 ['jquery'],
-    'main':                     ['nvslider']
-  }
+    baseUrl: './js',
+    paths: {
+        'jquery':       'vendor/jquery',
+        'bootstrap':    'vendor/bootstrap',
+        'nvslider':     'vendor/jquery.nvslider',
+        'main':         'vendor/main'
+    },
+    shim: {
+        'bootstrap':    ['jquery'],
+        'nvslider':     ['jquery'],
+        'main':         ['nvslider']
+    }
 });

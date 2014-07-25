@@ -1,7 +1,6 @@
 /*global $:false, jQuery:false */
 /*global console:false */
 /*jshint unused:false*/
-
 ;(function ($, window, document, undefined) {
     'use strict';
 

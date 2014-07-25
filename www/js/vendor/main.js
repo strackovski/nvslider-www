@@ -1,10 +1,9 @@
-/* Vladimir Strackovski 2014, info@strackovski.net */
+/* Vladimir Strackovski 2014, vlado@nv3.org */
 /*jslint browser:true*/
 /*global $, jQuery*/
 /*global console*/
 $(document).ready(function () {
    // $('body,html').animate({scrollTop: 0}, {duration: 700});
-
     'use strict';
 
     var win_height = 0;
@@ -27,7 +26,7 @@ $(document).ready(function () {
         //call nvSlider
         $('.introduction-list ul').nvslider({height: '200px'});
 
-        $('.sampleList ul').nvslider({orientation: 'portrait', rows:2});
+        $('.sampleList ul').nvslider({orientation: 'portrait', rows: 2});
         //click handler for 'show me' button
         $('.start').on('click', function (e) {
             e.preventDefault();
