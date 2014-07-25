@@ -1,10 +1,12 @@
 /* ===================================================
  * nv/Slider-www Home Page
  * http://github.com/strackovski/nvslider-www
+ *
+ * Index page
  * =================================================== */
 define([
     'jquery',
-    'app/models/homeModel',
+    'app/models/indexModel',
     'bootstrap',
     'nvslider',
     'main'

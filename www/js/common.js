@@ -2,6 +2,9 @@
  * nv/Slider-www Home Page
  * http://github.com/strackovski/nvslider-www
  *
+ * This file maps project dependencies in 'name':'path'
+ * format from baseUrl.
+ *
  * The build will inline common dependencies
  * into this file.
  * =================================================== */

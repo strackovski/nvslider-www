@@ -1,4 +1,9 @@
-/* Vladimir Strackovski 2014, vlado@nv3.org */
+/* ===================================================
+ * nv/Slider-www Home Page
+ * http://github.com/strackovski/nvslider-www
+ *
+ * Main Javascript UI, fires on document ready
+ * =================================================== */
 /*jslint browser:true*/
 /*global $, jQuery*/
 /*global console*/
@@ -68,7 +73,7 @@ $(document).ready(function () {
             e.preventDefault();
             var target = $(this).attr('class');
             if (!(activeGuide === 'quick guide' && target === 'btn-quick-guide') &&
-                !(activeGuide === 'long guide' && target === 'btn-long-guide')) {
+                    !(activeGuide === 'long guide' && target === 'btn-long-guide')) {
                 if (target === 'btn-quick-guide') {
                     $('.docs-page> div[class*="guide"]:visible').fadeOut(100, function () {
                         $('.quick-guide').fadeIn(200);

@@ -1,6 +1,8 @@
 /* ===================================================
  * nv/Slider-www Home Page
  * http://github.com/strackovski/nvslider-www
+ *
+ * Download page
  * =================================================== */
 define([
     'jquery',

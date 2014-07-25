@@ -1,3 +1,10 @@
+/* ===================================================
+ * nv/Slider-www Home Page
+ * http://github.com/strackovski/nvslider-www
+ *
+ * Download page model
+ * =================================================== */
+
 /*jslint node: true */
 'use strict';
 
