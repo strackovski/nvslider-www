@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if !IE]><!--><html class="not"><!--><![endif]-->
+<!--[if IE]><!--><html lang="en" class="ie"><!--><![endif]-->
+
+<html>
+<head>
+    <title>nv/Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/nvslider.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js -->
+    <script src="./js/vendor/require.js"></script>
+    <script type="text/javascript">
+        require(['./js/common'], function (common) {
+            require(['app/main-home']);
+        });
+    </script>
+
+    <!-- fonts -->
+    <script src="//use.edgefonts.net/fredericka-the-great;megrim;mountains-of-christmas;cabin-sketch;julee;waiting-for-the-sunrise.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<nav class="nav">
+    <ul>
+        <li><a class="btn-home" href="index.html">Home</a></li>
+        <li><a class="btn-dl" href="download.html">Download</a></li>
+        <li class="active-link"><a class="btn-docs" href="documentation.html">Docs</a></li>
+    </ul>
+</nav>
+
+<div class="docs-page">
+<div class="docs-top-nav">
+    <ul class="documentation">
+        <li class="active-link"><a class="btn-quick-guide" href="#">Quick Guide</a></li> |
+        <li class="mrg"><a class="btn-long-guide" href="#">Detailed Guide</a></li>
+    </ul>
+    <br clear="all">
+</div>
+<div class="quick-guide">
+    <h2 class="docs-title">Quick Guide</h2>
+
+    <p class="note">1. What you need</p>
+    <p>
+        <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
+    </p>
+    <p>
+        <i class="fa fa-angle-right"></i> <a class="download-link" href="download.html">nvSlider files</a> (jquery.nvslider.js, nvslider.css)
+    </p>
+    <p>
+        <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i> </a> (included in the <a class="download-link" href="download.html">download</a>)
+    </p>
+    <p class="note">
+        2. Make an unordered list and populate it with list items that contain <span class="code-style">span</span> elements.
+                    <pre>&#60div class="wrap"&#62
+    &#60ul class="myList"&#62
+        &#60li&#62&#60span&#62Content1&#60span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content2&#60span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content3&#60span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content4&#60span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content5&#60span&#62&#60/li&#62
+    &#60/ul&#62
+&#60/div&#62</pre>
+
+
+    <p class="note">3. Define width of a wrapper element</p>
+    <p>CSS:</p>
+                <pre>
+.wrap {
+    width:550px;
+}</pre>
+    <div class="alert alert-info">
+        Width must be defined on an element that wraps the <span class="code-style">ul</span>, not the <span class="code-style">ul</span> itself.
+    </div>
+
+    <p class="note">4. Call the plugin</p>
+    <p>Call the plugin on an unordered list inside your <span class="code-style">document.ready()</span> event.</p>
+    <pre>&#36;('.myList').nvslider();</pre>
+
+    <br>
+    <!--[if gte IE 8]><!-->
+    <div class="sl5-ul">
+        <ul class="demo2-ul">
+            <li><span>Content1</span></li>
+            <li><span>Content2</span></li>
+            <li><span>Content3</span></li>
+            <li><span>Content4</span></li>
+            <li><span>Content5</span></li>
+        </ul>
+    </div>
+    <!--><![endif]-->
+    <!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+
+
+</div>
+<!-- long guide -->
+<div class="long-guide">
+<div class="long-code">
+<h2 class="docs-title">Detailed Guide</h2>
+
+<p class="note target-1">1. What you need</p>
+<p>
+    <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> <a class="download-link" href="download.html">nvSlider files</a> (jquery.nvslider.js, nvslider.css)
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i> </a> (included in the <a class="download-link" href="download.html">download</a>)
+</p>
+<p>
+    Transfer the files to your project and reference them in the HTML document, like so:
+</p>
+        <pre>&#60html&#62
+    &#60head&#62
+        &#60script type="text/javascript" src="jquery-1.11.1.js"&#62&#60/script&#62
+        &#60script type="text/javascript" src="jquery.nvslider.js"&#62&#60/script&#62
+        &#60link rel="stylesheet" href="nvslider.css"&#62
+    &#60/head&#62
+    &#60body&#62
+    ...
+    &#60/body&#62
+&#60/html&#62</pre>
+
+<div class="alert alert-info">
+    Instead of downloading jQuery, you can also include a link of the file hosted online:
+    <br>
+    &#60script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&#62&#60/script&#62
+</div>
+<p class="note target-2">
+    2. Make an unordered list and populate it with list items.
+                    <pre>
+&#60div class="wrap"&#62
+    &#60ul class="myList"&#62
+        &#60li&#62Content1&#60/li&#62
+        &#60li&#62Content2&#60/li&#62
+        &#60li&#62Content3&#60/li&#62
+        &#60li&#62Content4&#60/li&#62
+        &#60li&#62Content5&#60/li&#62
+    &#60/ul&#62
+&#60/div&#62</pre>
+
+<p>
+    Because <span class="code-style">li</span> element takes the whole height and width, in order to be able to
+    style the grid elements you must enclose the contents in a <span class="code-style">span</span> element. Also, the
+    themes (about which we'll talk a bit later) won't work if there are no <span class="code-style">span</span>s.
+    <br><br>
+    But first we'll see what the finished look is without <span class="code-style">span</span> elements. Feel
+    free to jump to the <a class="style-part" href="#">part</a> with <span class="code-style">span</span> elements.
+</p>
+<p class="note target-3">3. Define width for a wrapper element</p>
+
+<p>CSS:</p>
+                <pre>
+.wrap {
+    width:550px;
+}</pre>
+<div class="alert alert-info">
+    Width must be defined on an element that wraps the <span class="code-style">ul</span>, not the <span class="code-style">ul</span> itself.
+</div>
+
+<p class="note target-4">4. Call the plugin</p>
+<p>Call the plugin on an unordered list inside your <span class="code-style">document.ready()</span> event.</p>
+                <pre>
+&#36;('.myList').nvslider();</pre>
+<p>
+    With no options object passed, the defaults take effect, namely:
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> orientation: landscape
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> how many items to show: 3
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> how many items to slide on arrow click: 1
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> height: 150px
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> background color: #d2d2d2
+</p>
+<p>
+    <i class="fa fa-angle-right"></i> arrows background: gray with 0.8 opacity
+</p>
+
+<p class="note target-5">5. The result</p>
+<!--[if gte IE 8]><!-->
+<div class="sl1-ul">
+    <ul class="demo-ul">
+        <li>Content1</li>
+        <li>Content2</li>
+        <li>Content3</li>
+        <li>Content4</li>
+        <li>Content5</li>
+    </ul>
+</div>
+<!--><![endif]-->
+<!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+<p class="note target-6">6. Styling</p>
+<p>Since <span class="code-style">li</span> elements take the whole width, you must use <span class="code-style">span</span> elements to be able to adjust the look.</p>
+                <pre>
+&#60div class="wrap"&#62
+    &#60ul class="myList"&#62
+        &#60li&#62&#60span&#62Content1&#60/span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content2&#60/span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content3&#60/span&#62&#60/li&#62
+        &#60li&#62&#60span&#62Content4&#60/span&#62&#60/li&#62
+    &#60/ul&#62
+&#60/div&#62</pre>
+<p>An example CSS:</p>
+<pre>.myList li span{
+    background: #666;
+    color:#fff;
+    position: absolute;
+    top:10px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    padding:5px;
+    overflow: hidden;
+
+    /*text centering*/
+    line-height: 160px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2em;
+}</pre>
+
+<p>Call the plugin on an unordered list and set the height to 200px.</p>
+                <pre>
+&#36;('.myList').nvslider({height: 200px});</pre>
+<p>And what we get is:</p>
+<!--[if gte IE 8]><!-->
+<div class="sl2-ul">
+    <ul class="demo2-ul">
+        <li><span>Content1</span></li><li>
+        <span>Content2</span></li><li>
+        <span>Content3</span></li><li>
+        <span>Content4</span></li><li>
+        <span>Content5</span>
+    </li>
+    </ul>
+</div>
+<!--><![endif]-->
+<!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+<p class="note target-7"><i class="fa fa-angle-right"></i> Themes</p>
+<p>
+    Since we defined content inside <span class="code-style">span</span> elements,
+    we could skip the styling, and let the default theme kick in.
+</p>
+<p>
+    Grid view with 'default' theme:
+</p>
+
+<!--[if gte IE 8]><!-->
+<div class="sl4-ul">
+    <ul class="demo3-ul">
+        <li><span>Content1</span></li><li>
+        <span>Content2</span></li><li>
+        <span>Content3</span></li><li>
+        <span>Content4</span></li><li>
+        <span>Content5</span>
+    </li>
+    </ul>
+</div>
+<!--><![endif]-->
+<!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+
+<br><br>
+<p>
+    The second available theme is called 'gallery'. It takes on a minimalistic styling leaving
+    <span class="code-style">span</span> elements as they are and adds a black top and bottom border to the container element.
+</p>
+<p>
+    The gallery theme should be used when contents are images.
+</p>
+<p>
+    Grid view with 'gallery' theme:
+</p>
+<!--[if gte IE 8]><!-->
+<div class="gallery-list">
+    <ul>
+        <li><span><img src="assets/images/thumb_big.png" alt="Kitty"/></span></li><li>
+        <span><img src="assets/images/thumb2_big.png" alt="Rocks"/></span>
+    </li><li>
+        <span><img src="assets/images/thumb1_big.png" alt="Flower"/></span>
+    </li><li>
+        <span><img src="assets/images/thumb4_big.png" alt="Piggy"/></span>
+    </li><li>
+        <span><img src="assets/images/thumb3_big.png" alt="Grass"/></span>
+    </li><li>
+        <span><img src="assets/images/thumb2_big.png" alt="Rocks"/></span>
+    </li>
+    </ul>
+</div>
+<!--><![endif]-->
+<!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+<br>
+<div class="alert alert-info">Call plugin: $('ul.myList').nvslider({theme:'gallery'})</div>
+<p class="note target-8">7. Options</p>
+<p>
+    Options allow you to adjust the behavior of the plugin. If no options are provided, the
+    defaults will take effect.
+</p>
+<div class="popup">
+    <p class="type-declaration">
+        type: number
+        <br>
+        default: 3
+        <br>
+        possible options: any number
+    </p>
+    <div class="usage-declaration">
+        <span class="popup-title">Usage</span>
+        <pre>$('ul').nvslider({showItems:6});</pre>
+    </div>
+
+    <div class="details-declaration">
+        <span class="popup-title">Details</span>
+        <p>Sets the number of items to show in a row.</p>
+    </div>
+</div>
+<p>
+    Available options are:
+</p>
+<ul class="options-list">
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>showItems</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>orientation</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>rows</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>slideFor</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>containerCss</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>navCss</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>navHover</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>theme</span></span></p>
+    </li>
+    <li>
+        <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>height</span></span></p>
+    </li>
+</ul>
+
+<br>
+<p>An example of a portrait mode slider, with 2 rows of 4 items shown, sliding 2 rows at a time.</p>
+<!--[if gte IE 8]><!-->
+<div class="sl3-ul">
+    <ul class="demo-portrait">
+        <li><span>Apples</span></li><li>
+        <span>Oranges</span></li><li>
+        <span>Pineapple</span></li><li>
+        <span>Kiwi</span></li><li>
+        <span>Banana</span></li><li>
+        <span>Lime</span></li><li>
+        <span>Cantaloupe</span></li><li>
+        <span>Starfruit</span></li><li>
+        <span>Grapes</span></li><li>
+        <span>Lemon</span></li><li>
+        <span>Cherries</span></li><li>
+        <span>Strawberries</span></li><li>
+        <span>Blueberries</span></li><li>
+        <span>Pear</span></li><li>
+        <span>Watermelon</span></li><li>
+        <span>Raspberries</span></li><li>
+        <span>Blackberries</span></li><li>
+        <span>Mango</span></li><li>
+        <span>Passion fruit</span></li><li>
+        <span>Papaya</span></li>
+    </ul>
+</div>
+<!--><![endif]-->
+<!--[if lte IE 7]><p class="ieDesc">Plugin not supported in IE7</p><![endif]-->
+
+<br>
+<p>Call plugin with options:</p>
+<pre>$('.myList).nvslider({orientation:'portrait', showItems:4, rows:2, slideFor:2, height: '200px'});</pre>
+</div>
+<!--[if !IE]><!-->
+<div class="detailed-guide-nav">
+    <p class="nav-title">Navigation</p>
+    <ul>
+        <li><i class="fa fa-angle-right"></i> <a href="#">What you need</a></li>
+        <li><i class="fa fa-angle-right"></i> <a href="#">Unordered list structure</a></li>
+        <li><i class="fa fa-angle-right"></i> <a href="#">List item height and position</a></li>
+        <li><i class="fa fa-angle-right"></i> <a href="#">Call the plugin</a></li>
+        <li><i class="fa fa-angle-right"></i> <a href="#">First result</a></li>
+        <li class="item-important"><i class="fa fa-angle-right"></i> <a href="#">Styling</a></li>
+        <li class="item-important">&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i> <a href="#"> Themes</a></li>
+        <li class="item-important"><i class="fa fa-angle-right"></i> <a href="#">Options</a></li>
+        <li><i class="fa fa-angle-up"></i> <a class="back-to-top" href="#">Back to top</a></li>
+    </ul>
+</div>
+<!--><![endif]-->
+</div>
+</div>
+
+<!--[if !IE]><!-->
+<div class="page-footer">
+    <ul class="footer-nav">
+        <li><a href="https://github.com/strackovski/nvslider" target="_blank"><i class="fa fa-github"> </i> GitHub</a></li>
+        <li><a href="mailto:info@strackovski.net"><i class="fa fa-envelope"> </i> Contact</a></li>
+        <li><a href="http://strackovski.net/" target="_blank"><i class="fa fa-home"> </i> Homepage</a></li>
+    </ul>
+</div>
+<!--><![endif]-->
+</html>
