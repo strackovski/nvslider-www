@@ -213,8 +213,6 @@
 
     $.fn.nvslider = function (options) {
         var $this = $(this);
-        console.log('this: ', $this);
-
         return $this.each(function () {
             var obj = new $.nvslider($this, options);
             return obj;

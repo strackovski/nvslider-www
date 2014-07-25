@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         cssmin: {
             compile: {
                 files: {
-                    'www-release/css/style.css': 'www-release/css/style.css',
+                        'www-release/css/style.css': 'www-release/css/style.css',
                     'www-release/css/font-awesome.css': 'www-release/css/font-awesome.css',
                     'www-release/css/bootstrap.css': 'www-release/css/bootstrap.css',
                     'www-release/css/nvslider.css': 'www-release/css/nvslider.css'
