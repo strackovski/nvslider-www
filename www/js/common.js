@@ -2,8 +2,7 @@
  * nv/Slider-www Home Page
  * http://github.com/strackovski/nvslider-www
  *
- * This file maps project dependencies in 'name':'path'
- * format from baseUrl.
+ * This file configures the options for requireJS.
  *
  * The build will inline common dependencies
  * into this file.
@@ -14,7 +13,7 @@ requirejs.config({
         'jquery':       'vendor/jquery',
         'bootstrap':    'vendor/bootstrap',
         'nvslider':     'vendor/jquery.nvslider',
-        'main':         'vendor/main'
+        'main':         'slider-www'
     },
     shim: {
         'bootstrap':    ['jquery'],
