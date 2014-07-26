@@ -2,7 +2,7 @@
   "name": "nvslider-www",
   "description": "Web site for nvSlider project.",
   "author": "Vladimir Stračkovski",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "devDependencies": {
     "grunt-contrib-cssmin":       "latest",
     "grunt-contrib-requirejs":    "latest",
