@@ -1,6 +1,7 @@
 {
-  "name": "nv-slider-www",
-  "author": "Vladimir Stračkovski <vlado@nv3.org>",
+  "name": "nvslider-www",
+  "description": "Web site for nvSlider project.",
+  "author": "Vladimir Stračkovski",
   "version": "1.0.0",
   "devDependencies": {
     "grunt-contrib-cssmin":       "latest",

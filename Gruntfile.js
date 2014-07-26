@@ -15,12 +15,15 @@ module.exports = function (grunt) {
             }
         },
         cssmin: {
-            compile: {
+            combine: {
                 files: {
-                        'www-release/css/style.css': 'www-release/css/style.css',
-                    'www-release/css/font-awesome.css': 'www-release/css/font-awesome.css',
-                    'www-release/css/bootstrap.css': 'www-release/css/bootstrap.css',
-                    'www-release/css/nvslider.css': 'www-release/css/nvslider.css'
+                    'www-release/css/styles.min.css':
+                        [
+                            'www-release/css/bootstrap.css',
+                            'www-release/css/font-awesome.css',
+                            'www-release/css/jquery.nvslider.css',
+                            'www-release/css/slider-www.css'
+                        ]
                 }
             }
         }
