@@ -8,9 +8,7 @@
 /*global $, jQuery*/
 /*global console*/
 $(document).ready(function () {
-   // $('body,html').animate({scrollTop: 0}, {duration: 700});
     'use strict';
-
     var win_height = 0;
 
     $('.nav ul li a').each(function () {
@@ -19,16 +17,11 @@ $(document).ready(function () {
 
     //if home page
     if ($('div.start').length > 0) {
-        //set active link
         $('.nav ul li a.btn-home').parent('li').addClass('active-link');
-
-        //hide footer
         $('.page-footer').hide();
 
         //call nvSlider
         $('.hero ul').nvslider({orientation: 'landscape', showItems: 1, slideFor: 1, rows: 1, containerCss: {background: 'none', border: 'none'}, leftArrowClass: 'slider-arrow', rightArrowClass: 'slider-arrow', height: '300px' });
-
-        //call nvSlider
         $('.introduction-list ul').nvslider({height: '200px'});
 
         $('.sampleList ul').nvslider({orientation: 'portrait', rows: 2});
