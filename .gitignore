@@ -1,4 +1,5 @@
 .idea
+.htaccess
 .DS_Store
 node_modules
 www-release
