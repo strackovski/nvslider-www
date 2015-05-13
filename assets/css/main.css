@@ -1,0 +1,75 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.slider-wrapper { position: relative; padding: 0 24px; }
+.nvs-nav { top: 45%; }
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand > span {
+    font-weight: normal;
+}
+
+.container.top { padding-top: 32px; }
+
+.jumbotron {
+    background: #292929;
+}
+
+.jumbotron.small {
+    padding: 20px 0 30px 0;
+}
+
+.jumbotron h1 {
+    color: #F2E6B6;
+}
+
+.jumbotron h1 span {
+    font-weight: normal;
+}
+
+.jumbotron p {
+    color: #8F9E8B;
+}
+
+footer .text-right a img {
+    height: 20px;
+    opacity: .6;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+footer .text-right a:hover img {
+    opacity: 1;
+}
+
+.navbar-default{
+    background: #fff;
+}
+
+.section h2 {
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .jumbotron .row > div { padding: 0; }
+
+    .jumbotron.small {
+        padding: 20px 12px 30px 12px;
+    }
+}
+
+pre {
+    background: #F2E6B6;
+        color: #292929;
+}
