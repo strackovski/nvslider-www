@@ -1,0 +1,114 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>nvslider | NV3 Projects</title>
+    <meta name="description" content="A simple DOM element slider plugin for jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/styles/nvslider.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="assets/scripts/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/nvslider"><span>nv</span>slider</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/nvslider/docs">Docs</a></li>
+                <li><a href="http://github.com/strackovski/nvslider">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron small">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1><span>nv</span>slider docs</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            <div class="row">
+                <div class="col-xs-12 section">
+                    <h2>Basic usage</h2>
+<pre>
+    $('.slider').nvslider({
+        showItems: 3,
+        slideFor: 3,
+        slideshow: true,
+        timer: 2000
+    });
+</pre>
+                </div>
+
+                <div class="col-xs-12">
+<pre>
+    &lt;div class="slider-wrapper"&gt;
+        &lt;ul class="slider"&gt;
+            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <h4>Incomplete docs</h4>
+            <p>More soon...</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-xs-6">
+                <p>&copy; 2015 Vladimir Stračkovski</p>
+            </div>
+            <div class="col-xs-6 text-right">
+                <a href="http://www.nv3.si" target="_blank"><img src="assets/images/nv3_logo_inv_dark.png" alt="NV3"/></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="assets/scripts/jquery.nvslider.min.js"></script>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
