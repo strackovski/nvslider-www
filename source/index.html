@@ -9,8 +9,10 @@
         <title>nvslider | NV3 Projects</title>
         <meta name="description" content="A simple DOM element slider plugin for jQuery">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://use.fonticons.com/5d7c5985.js"></script>
+        <script src="//use.typekit.net/yuf4cje.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
         <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
         <style>
             body {
                 padding-top: 50px;
@@ -27,7 +29,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -35,57 +37,161 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="/nvslider"><span>nv</span>slider</a>
+        <a class="navbar-brand active" href="/nvslider"><span>nv</span>slider</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/nvslider/docs">Docs</a></li>
-                <li><a href="http://github.com/strackovski/nvslider">GitHub</a></li>
+                <li><a class="active" href="/nvslider/docs">DOCUMENTATION</a></li>
+                <li><a class="ico" href="http://github.com/strackovski/nvslider"><i class="fi fi-mark-github fi-lg"></i></a></li>
             </ul>
         </div>
       </div>
     </nav>
 
     <div class="jumbotron">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12">
-                  <h1><span>nv</span>slider</h1>
-                  <p>A simple DOM element slider plugin for jQuery</p>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="slider-wrapper">
-                    <ul class="slider">
-                        <li><img src="assets/images/img1.jpg" alt="Slide image"/></li>
-                        <li><img src="assets/images/img2.jpg" alt="Slide image"/></li>
-                        <li><img src="assets/images/img3.jpg" alt="Slide image"/></li>
-                        <li><img src="assets/images/img4.jpg" alt="Slide image"/></li>
-                        <li><img src="assets/images/img5.jpg" alt="Slide image"/></li>
-                        <li><img src="assets/images/img6.jpg" alt="Slide image"/></li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-0 col-sm-3 logo-image">
+                </div><!--
+                --><div class="col-xs-12 col-sm-9">
+                      <h1><span>nv</span>slider</h1>
+                      <p>A simple DOM element slider plugin for jQuery</p>
                 </div>
             </div>
         </div>
-
-      <hr>
-
-      <footer>
-          <div class="row">
-              <div class="col-xs-6">
-                  <p>&copy; 2015 Vladimir Stračkovski</p>
-              </div>
-              <div class="col-xs-6 text-right">
-                  <a href="http://www.nv3.si" target="_blank"><img src="assets/images/nv3_logo_inv_dark.png" alt="NV3"/></a>
-              </div>
-          </div>
-      </footer>
     </div>
+
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 sidebar">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-12 side-item">
+                        <h3>Latest Version</h3>
+                        <div class="latest-wrapper">
+                            <ul class="latest-slider">
+                                <li>
+                                    <a href="https://github.com/strackovski/nvslider/releases/tag/1.2.0">
+                                        <h4>Stable: Version 1.2.0</h4>
+                                        <p class="small"><i class="fi fi-mark-github"></i> Apr 22, 2015</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/strackovski/nvslider/releases/tag/1.0.0">
+                                        <h4>Stable: Version 1.0.0</h4>
+                                        <p class="small"><i class="fi fi-mark-github"></i> Jul 26, 2014</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-12 side-item">
+                        <h3>Latest News</h3>
+                        <div class="row">
+                            <div class="news-wrapper">
+                                <div class="news-slider">
+                                    <div class="col-sm-12 feat-item">
+                                        <h4>Version 1.2.0 released</h4>
+                                        <p class="small">Optimize usage with multiple instances, simplify default styling.</p>
+                                    </div>
+                                    <div class="col-sm-12 feat-item">
+                                        <h4>Version 1.0.0 released</h4>
+                                        <p class="small">Initial version release is a quick and dirty solution for DOM element sliding.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <div class="row content">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>What is <span>nv</span>slider</h2>
+                        <p>
+                            nvslider is a plugin for jQuery that makes it easy to create carousels and sliders on your
+                            page. Take any array of elements, wrap them in a block element and initialize the slider
+                            with options according to your needs.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h2>Why <span>nv</span>slider</h2>
+                        <p>
+                            nvslider is open source and free to use, it offers a bunch of features out-of-the-box,
+                            and its source code is easy to understand and extend. The project is also actively developed
+                            and updated regularly.
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <h2>In action</h2>
+                        <div class="slider-wrapper">
+                            <ul class="slider">
+                                <li><img src="http://fc02.deviantart.net/fs43/i/2009/063/0/9/Lake_Superior_Sunset_3_by_MamaT06.jpg" alt="Slide image"/></li>
+                                <li><img src="http://res.freestockphotos.biz/pictures/2/2441-closeup-of-the-moon-at-night-pv.jpg" alt="Slide image"/></li>
+                                <li><img src="http://upload.wikimedia.org/wikipedia/commons/2/2f/Phalacrocorax_carbo02.jpg" alt="Slide image"/></li>
+                                <li><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Japan_Airlines_Boeing_787-846_JA828J_Flight_over_Nangang_District,_Taipei_20141030b.jpg/800px-Japan_Airlines_Boeing_787-846_JA828J_Flight_over_Nangang_District,_Taipei_20141030b.jpg" alt="Slide image"/></li>
+                                <li><img src="http://upload.wikimedia.org/wikipedia/commons/6/6d/Milvus_migrans_front(ThKraft).jpg" alt="Slide image"/></li>
+                                <li><img src="http://upload.wikimedia.org/wikipedia/commons/1/1f/Piran_slovenia.jpg" alt="Slide image"/></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <h2>Easy to use</h2>
+                        <p>
+                            Just create a set of elements for your slides, put them in a wrapper and execute the slider
+                            on the set container. This is an example with an unordered list, but any element can be used.
+                        </p>
+                        <pre>
+...
+$('.slider').nvslider({
+    showItems: 3,
+    slideFor: 3,
+    slideshow: true,
+    timer: 2000
+});
+...
+&lt;div class="slider-wrapper"&gt;
+    &lt;ul class="slider"&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+...
+                        </pre>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <h2>How to get started</h2>
+                        <p>
+                            <a href="https://github.com/strackovski/nvslider/archive/master.zip">Download nvslider</a>
+                            or clone it from our <a href="https://github.com/strackovski/nvslider">source repository</a>
+                            on GitHub. See the <a href="/nvslider/docs">documentation</a> for usage details and
+                            practical examples.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>&copy; 2015 Vladimir Stračkovski</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <a href="https://github.com/strackovski/nvslider" target="_blank"><i class="fi fi-mark-github fi-lg"></i></a>
+                    <a href="http://www.nv3.si" target="_blank"><img src="assets/images/nv3_logo_inv_dark.png" alt="NV3"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="assets/scripts/bootstrap.min.js"></script>
