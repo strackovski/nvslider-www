@@ -9,121 +9,90 @@
     <title>nvslider | NV3 Projects</title>
     <meta name="description" content="A simple DOM element slider plugin for jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fonticons.com/5d7c5985.js"></script>
-    <script src="//use.typekit.net/yuf4cje.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-    </style>
-    <link rel="stylesheet" href="assets/styles/nvslider.min.css">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <script src="assets/scripts/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- @include head.html -->
 </head>
 <body>
-<!-- @import tracking.md -->
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/nvslider"><span>nv</span>slider</a>
+    <!-- @import tracking.md -->
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/nvslider"><span>nv</span>slider</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="/nvslider/docs">DOCUMENTATION</a></li>
+                    <li><a href="http://github.com/strackovski/nvslider"><i class="fi fi-mark-github fi-lg"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="active" href="/nvslider/docs">DOCUMENTATION</a></li>
-                <li><a href="http://github.com/strackovski/nvslider"><i class="fi fi-mark-github fi-lg"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="jumbotron">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-0 col-sm-3 logo-image">
-            </div><!--
-                --><div class="col-xs-12 col-sm-9">
-            <h1><span>nv</span>slider</h1>
-            <p>A simple DOM element slider plugin for jQuery</p>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid main">
-    <div class="row">
-        <div class="col-sm-3 col-xs-12 sidebar xs-collapse">
+    <div class="jumbotron">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 side-item">
-                    <h3>Incomplete docs</h3>
-                    <p>We're updating the documentation. In the mean time, check the basic example.</p>
-                </div>
+                <div class="col-xs-0 col-sm-3 logo-image">
+                </div><!--
+                    --><div class="col-xs-12 col-sm-9">
+                <h1><span>nv</span>slider</h1>
+                <p>A simple DOM element slider plugin for jQuery</p>
             </div>
-        </div>
-
-        <div class="col-sm-9 col-xs-12">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>Basic usage</h2>
-                    <p>Create a set of elements for your slides, put them in a wrapper and execute the slider on the set container.</p>
-<pre>
-    $('.slider').nvslider({
-        showItems: 3,
-        slideFor: 3,
-        slideshow: true,
-        timer: 2000
-    });
-</pre>
-                </div>
-
-                <div class="col-xs-12">
-<pre>
-    &lt;div class="slider-wrapper"&gt;
-        &lt;ul class="slider"&gt;
-            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-</pre>
-                </div>
             </div>
         </div>
     </div>
 
-    <hr>
-</div>
-
-<footer>
-    <div class="container-fluid footer">
+    <div class="container-fluid main">
         <div class="row">
-            <div class="col-xs-6">
-                <p>&copy; 2015 Vladimir Stračkovski</p>
+            <div class="col-sm-3 col-xs-12 sidebar xs-collapse">
+                <div class="row">
+                    <div class="col-xs-12 side-item">
+                        <h3>Incomplete docs</h3>
+                        <p>We're updating the documentation. In the mean time, check the basic example.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 text-right">
-                <a href="https://github.com/strackovski/nvslider" target="_blank"><i class="fi fi-mark-github fi-lg"></i></a>
-                <a href="http://www.nv3.si" target="_blank"><img src="assets/images/nv3_logo_inv_dark.png" alt="NV3"/></a>
+
+            <div class="col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Basic usage</h2>
+                        <p>Create a set of elements for your slides, put them in a wrapper and execute the slider on the set container.</p>
+                        <pre>
+$('.slider').nvslider({
+    showItems: 3,
+    slideFor: 3,
+    slideshow: true,
+    timer: 2000
+});
+                        </pre>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <pre>
+&lt;div class="slider-wrapper"&gt;
+    &lt;ul class="slider"&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="" alt=""/&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
             </div>
         </div>
+        <hr>
     </div>
-</footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="assets/scripts/bootstrap.min.js"></script>
-<script src="assets/scripts/jquery.nvslider.min.js"></script>
-<script src="assets/scripts/main.js"></script>
+    <!-- @include footer.html -->
 </body>
 </html>
